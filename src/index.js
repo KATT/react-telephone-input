@@ -226,9 +226,10 @@ var ReactTelephoneInput = React.createClass({
     getElement(index) {
         return this.refs[`flag_no_${index}`].getDOMNode();
     },
-    onFocusEventHandler() {
+    onFocusEventHandler(e) {
         let node = this.refs.numberInput.getDOMNode();
-        if (node) {
+        let target = e.target;
+        if (node && target && target.contains(node)) {
             setTimeout(function() { node.focus(); }, 1);
         }
     },

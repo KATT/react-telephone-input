@@ -46,7 +46,7 @@
     "react-component-gulp-tasks": "^0.7.0"
   },
   "dependencies": {
-    "lodash": ">=2.4.1",
+    "lodash": "^3.9.4",
     "react": ">=0.12.1",
     "classnames": "^2.1.2",
     "react-onclickoutside": "^0.2.4"
